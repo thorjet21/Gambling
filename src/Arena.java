@@ -17,5 +17,6 @@ public class Arena extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawImage(cardImage, 10, getHeight()-110, 70, 100, null);
+
     }
 }

@@ -4,63 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87e30a4a-194b-48dc-b84e-6955406bf693" name="Changes" comment="make the arena class">
-      <change afterPath="$PROJECT_DIR$/Cards/10ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/10ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/10ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/10ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/2ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/2ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/2ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/2ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/3ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/3ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/3ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/3ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/4ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/4ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/4ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/4ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/5ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/5ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/5ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/5ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/6ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/6ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/6ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/6ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/7ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/7ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/7ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/7ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/8ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/8ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/8ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/8ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/9ofClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/9ofDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/9ofHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/9ofSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/aceOfClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/aceOfDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/aceOfHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/aceOfSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/jackOfClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/jackOfDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/jackOfHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/jackOfSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/kingOfClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/kingOfDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/kingOfHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/kingOfSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/queenOfClubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/queenOfDiamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/queenOfHearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cards/queenOfSpades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/playingCardsTemplate.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+    <list default="true" id="87e30a4a-194b-48dc-b84e-6955406bf693" name="Changes" comment="make buttons">
+      <change afterPath="$PROJECT_DIR$/Cards/blankCard.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arena.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,12 +70,21 @@
       <option name="project" value="LOCAL" />
       <updated>1744381164919</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="make buttons">
+      <option name="closed" value="true" />
+      <created>1746111056408</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1746111056408</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="make the arena class" />
-    <option name="LAST_COMMIT_MESSAGE" value="make the arena class" />
+    <MESSAGE value="make buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="make buttons" />
   </component>
 </project>

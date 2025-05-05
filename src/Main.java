@@ -1,5 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -28,7 +31,16 @@ public class Main {
         betLabel.setFont(new Font("bet", Font.PLAIN, 14));
         JTextField betMoney = new JTextField(6);
         betMoney.setFont(new Font("betMoney", Font.PLAIN, 14));
-        betMoney.
+
+        betMoney.addKeyListener(new KeyAdapter(){
+            public void keyTyped(KeyEvent e){
+                char x = e.getKeyChar();
+                if(!Character.isDigit(x) && x != KeyEvent.VK_BACK_SPACE && x != KeyEvent.VK_DELETE){
+                    //https://stackoverflow.com/questions/12550548/what-does-e-consume-do-in-java
+                    e.consume();
+                }
+            }
+        });
 
         JButton hitButton = new JButton("Hit");
         JButton standButton = new JButton("Stand");

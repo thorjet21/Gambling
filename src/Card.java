@@ -4,6 +4,7 @@ import java.util.Random;
 public class Card {
     private static ArrayList<String> cardImages = new ArrayList<>();
 
+    private static final String blank = "blankCard.png"
     private static final String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
     private static final String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king", "ace"};
 
@@ -11,7 +12,7 @@ public class Card {
         makeNewDeck();
     }
 
-    private void makeNewDeck() {
+    public void makeNewDeck() {
         cardImages.clear();
         for (String rank : ranks) {
             for (String suit : suits) {
@@ -26,5 +27,9 @@ public class Card {
         System.out.println(getCard);
         cardImages.remove(rand);
         return getCard;
+    }
+
+    public static String getBlank() {
+        return blank;
     }
 }
