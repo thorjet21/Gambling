@@ -43,6 +43,7 @@ public class Main {
         });
 
         JButton hitButton = new JButton("Hit");
+        hitButton.addActionListener(e -> panel.dealCard());
         JButton standButton = new JButton("Stand");
         JButton doubleButton = new JButton("Double");
 
@@ -55,5 +56,6 @@ public class Main {
 
         frame.add(bottomPanel, BorderLayout.SOUTH);
         frame.setVisible(true);
+
     }
 }
