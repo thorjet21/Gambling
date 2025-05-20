@@ -2,7 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-
+import javax.sound.sampled.*;
+import java.io.File;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,9 +44,22 @@ public class Main {
         });
 
         JButton hitButton = new JButton("Hit");
-        hitButton.addActionListener(e -> panel.dealCard());
         JButton standButton = new JButton("Stand");
         JButton doubleButton = new JButton("Double");
+
+        hitButton.addActionListener(e -> {
+            if (!panel.isRoundOver()) panel.dealCardToPlayer();
+        });
+
+        standButton.addActionListener(e -> {
+            if (!panel.isRoundOver()) panel.stand();
+        });
+
+        doubleButton.addActionListener(e -> {
+            if (!panel.isRoundOver()) panel.doubleDown();
+        });
+
+
 
         bottomPanel.add(moneyLabel);
         bottomPanel.add(betLabel);
@@ -56,6 +70,22 @@ public class Main {
 
         frame.add(bottomPanel, BorderLayout.SOUTH);
         frame.setVisible(true);
+
+        try {
+            File music = new File("src/jazzMusic.wav");
+            AudioInputStream musicStream = AudioSystem.getAudioInputStream(music);
+
+            Clip clip = AudioSystem.getClip();
+            clip.open(musicStream);
+
+            clip.loop(Clip.LOOP_CONTINUOUSLY);
+            clip.start();
+
+            Thread.sleep(Long.MAX_VALUE);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
     }
 }
