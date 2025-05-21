@@ -20,18 +20,19 @@ public class Arena extends JPanel {
     }
 
     public void startNewRound() {
+        roundOver = false;
+        playerTurn = true;
         playerHand.clear();
         dealerHand.clear();
         playerCards.clear();
         dealerCards.clear();
-        roundOver = false;
-        playerTurn = true;
 
-        // Deal initial 2 cards to player and dealer
+
         for (int i = 0; i < 2; i++) {
             dealCardToPlayer();
             dealCardToDealer();
         }
+
         repaint();
     }
 
@@ -72,19 +73,20 @@ public class Arena extends JPanel {
             showResult("Dealer wins!");
         }
 
-        roundOver = true;
     }
 
     public void doubleDown() {
         if (playerTurn && playerCards.size() == 2) {
             dealCardToPlayer();
-            stand(); // force stand after double
+            stand();
         }
     }
 
     public void showResult(String message) {
         JOptionPane.showMessageDialog(this, message, "Game Result", JOptionPane.INFORMATION_MESSAGE);
+        roundOver = false;
         startNewRound();
+
     }
 
     public int calculateTotal(ArrayList<String> cards) {
@@ -116,18 +118,17 @@ public class Arena extends JPanel {
         return roundOver;
     }
 
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        // Draw player's cards
         int x = 10;
         for (Image img : playerHand) {
             g.drawImage(img, x, getHeight() - 120, 70, 100, null);
             x += 80;
         }
 
-        // Draw dealer's cards
         x = 10;
         for (Image img : dealerHand) {
             g.drawImage(img, x, 20, 70, 100, null);
